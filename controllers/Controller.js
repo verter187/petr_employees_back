@@ -7,7 +7,6 @@ class Controllers {
   }
 
   async postEmployee(req, res) {
-    console.log(req.body);
     const newEmployee = await Employee.create({ ...req.body });
 
     return res.send(true);
